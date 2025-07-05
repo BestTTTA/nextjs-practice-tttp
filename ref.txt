@@ -1,0 +1,1 @@
+https://refine.dev/blog/next-js-with-typescript/#how-to-configure-absolute-imports-and-module-path-aliases-in-tsconfigjson
