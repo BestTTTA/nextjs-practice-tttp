@@ -1,23 +1,25 @@
 "use client";
 
 import Button from "@/app/ui/Button";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function UseButton() {
-  const [count, setCount] = useState<number>(1);
+  const [isOpen, setIsOpen] = useState<boolean>(false); 
 
   useEffect(() => {
-    console.log("useEffect", count);
-  }, [count]);
+    console.log("Button is:", isOpen ? "Open" : "Closed");
+  }, [isOpen]);
 
-  const increment = () => {
-    setCount(count + 1);
-    console.log(count);
+  const toggleButton = () => {
+    setIsOpen(!isOpen); 
   };
 
   return (
     <div className="flex flex-col gap-2">
-      <Button label="Click Increment" onClick={increment} />
+      <Button
+        label={isOpen ? "Close" : "Open"}
+        onClick={toggleButton}
+      />
     </div>
   );
 }
