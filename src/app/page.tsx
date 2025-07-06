@@ -18,6 +18,7 @@ export default async function HomePage() {
 
       <h1 className="text-xl font-bold">Test Button</h1>
       <UseButton />
+
     </main>
   );
 }
