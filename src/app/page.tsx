@@ -1,5 +1,7 @@
 // import Link from "next/link";
 import UseButton from "@/components/UseButton";
+import UseMemo2 from "@/components/UseMemo2";
+import Father from "@/components/Father";
 // import { users } from "@/lib/users";
 
 export default async function HomePage() {
@@ -20,9 +22,11 @@ export default async function HomePage() {
         ))}
       </ul> */}
 
-      <h1 className="text-xl font-bold">Test Button</h1>
-      <UseButton />
+      {/* <h1 className="text-xl font-bold">Test Button</h1>
+      <UseButton /> */}
 
+      {/* <UseMemo2 /> */}
+      <Father/>
     </main>
   );
 }
